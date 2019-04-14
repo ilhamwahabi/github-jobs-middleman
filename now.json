@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "jobberry-api",
+  "builds": [{
+    "src": "*.js",
+    "use": "@now/node"
+  }]
+}
