@@ -6,6 +6,7 @@ const app = express()
 app.use(cors())
 
 const baseUrl = "https://jobs.github.com"
+const PORT = process.env.port || 3000
 
 app.get('/jobs', async (request, response) => {
   try {
@@ -26,6 +27,6 @@ app.get('/jobs', async (request, response) => {
   }
 })
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log('Server is running')
 })
