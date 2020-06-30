@@ -16,6 +16,10 @@ function getQuery(query) {
   return allQuery;
 }
 
+app.get("/", (_, response) => {
+  response.send("Server is work!");
+});
+
 app.get("/jobs", async (request, response) => {
   try {
     const query = getQuery(request.query);
