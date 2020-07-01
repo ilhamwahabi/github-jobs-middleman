@@ -1,7 +1,7 @@
 {
-  "name": "jobberry-api",
+  "name": "github-jobs-middleman",
   "version": "1.0.0",
-  "description": "",
+  "description": "Middleman for Github Jobs API to bypass CORS",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"

@@ -1,20 +1,39 @@
 # Jobberry
 
-Simple vacant searcher for front end jobs (only).
+## Description
 
-Build with Preact & Bootstrap. Use Github Jobs API for data that fetched with Express (NodeJS).
-Deployed to Netlify and Now.
+An intermediatery server of [Github Jobs API](https://jobs.github.com/api) to bypass CORS.
 
-Access the app here: `https://jobberry.netlify.com` ( repo: `https://github.com/iwgx/jobberry` )
+Pass all query params from client to API.
 
-Access the api here: `https://jobberry-api.iwgx.now.sh/jobs` ( repo: `https://gitlab.com/iwgx/jobberry-api` )
+https://github-jobs-middleman.now.sh/
 
 ## Usage
 
-This just long hand from Github Jobs API.
+### /jobs
 
-Basically, when you access `https://jobs.github.com/positions.json`
-It's same when you access this `https://jobberry-api.iwgx.now.sh/jobs`
+Get All Jobs
 
-So does with this `https://jobs.github.com/positions.json&description=react`
-Is same with this `https://jobberry-api.iwgx.now.sh/jobs?description=react`
+Equal with `/positions.json` in Github Jobs API.
+
+#### Example
+
+`https://github-jobs-middleman.now.sh/jobs?description=react`
+
+_Equal with_
+
+`https://jobs.github.com/positions.json?description=react`
+
+### /jobs/:id
+
+Get Specific Job based on Id
+
+Equal with `/positions/ID.json` in Github Jobs API
+
+#### Example
+
+`https://github-jobs-middleman.now.sh/jobs/a4a03e31-b069-421c-ad0d-14f10fd6a1d3`
+
+_Equal with_
+
+`https://jobs.github.com/positions/a4a03e31-b069-421c-ad0d-14f10fd6a1d3.json`
