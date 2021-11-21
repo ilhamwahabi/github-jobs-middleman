@@ -1,4 +1,10 @@
-# Jobberry
+# github-jobs-middleman
+
+---
+
+**[DEPRECATED] Github announce that they already [shut down the Github Jobs](https://github.blog/changelog/2021-04-19-deprecation-notice-github-jobs-site/) so that mean this service also doesn't work anymore. Thanks for your interest!**
+
+---
 
 ## Description
 
@@ -6,7 +12,7 @@ An intermediatery server of [Github Jobs API](https://jobs.github.com/api) to by
 
 Pass all query params from client to API.
 
-https://github-jobs-middleman.now.sh/
+https://github-jobs-middleman.now.sh
 
 ## Usage
 
